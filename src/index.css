@@ -1,0 +1,144 @@
+body {
+  font-family: 'Hubballi', cursive;
+  background-color: #f1f5f9;
+  font-size: 1.6rem;
+}
+header {
+  background-color: #0ea5e9;
+  padding: 1.5rem;
+  border-bottom: 5px solid #0097e2;
+}
+header h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  margin:0;
+}
+.dos-columnas {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 868px) {
+  .dos-columnas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+main {
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.contenedor {
+  margin: 0 auto 2rem auto;
+  border-radius: .5rem;
+  background-color: white;
+  padding: 4rem;
+  -webkit-box-shadow: 0px 10px 33px -17px rgba(173,173,173,1);
+  -moz-box-shadow: 0px 10px 33px -17px rgba(173,173,173,1);
+  box-shadow: 0px 10px 33px -17px rgba(173,173,173,1);
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .contenedor{
+    padding: 35px;
+  }
+  main {
+    margin: 2rem auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 400px) {
+  header h1{
+    font-size: 30px;
+  }
+}
+form {
+  width: 100%;
+}
+.campo {
+  max-width: 400px;
+  margin: 0 auto 1rem auto;
+}
+.campo label {
+  display: block;
+
+}
+.campo input,
+.campo select {
+  all: unset;
+  border: 1px solid #cbd5e1;
+  width: 100%;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+ input[type="submit"] {
+  background-color: #0ea5e9;
+  margin: 2rem auto 0 auto;
+  display: block;
+  padding: 1rem 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+  transition: background-color .3s ease;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+ background-color: #0369a1;
+}
+@media (min-width: 768px) {
+   input[type="submit"]  {
+     max-width: 400px;
+  }
+}
+
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.error{
+  border: 1px solid rgb(242, 60, 60);
+  background: rgba(255, 158, 158, 0.079);
+  color: rgb(227, 63, 63);
+  padding: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+.clima{
+  text-align: center;
+}
+.clima > p:first-of-type{
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+.clima p{
+  margin: 0;
+}
+.clima p span{
+  font-size: 1rem;
+  vertical-align: super;
+}
+.temp_min_max{
+  margin-top: 2rem;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+@media (max-width: 380px) {
+  .contenedor{
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
